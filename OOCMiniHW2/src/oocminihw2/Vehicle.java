@@ -17,4 +17,11 @@ public abstract class Vehicle {
     protected int numWings = 0;
     protected int numSails = 0;
     private int numPassengers;
+
+    public Vehicle(float speed, String make, String type, int numPassengers) {
+        this.speed = speed;
+        this.make = make;
+        this.type = type;
+        this.numPassengers = numPassengers;
+    }
 }
