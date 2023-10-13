@@ -24,4 +24,31 @@ public abstract class Vehicle {
         this.type = type;
         this.numPassengers = numPassengers;
     }
+  // Getters and setters for attributes
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(float speed) {
+        this.speed = speed;
+    }
+
+    public float getDirection() {
+        return direction;
+    }
+
+    public void setDirection(float direction) {
+        this.direction = direction;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getType() {
+        return type;
+    }
 }
+
+
