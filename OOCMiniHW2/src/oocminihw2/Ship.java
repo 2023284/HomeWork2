@@ -8,9 +8,9 @@ package oocminihw2;
  *
  * @author user
  */
-public class Ship extends Vehicle {
+public class Ship extends Vehicle implements Sailable {
       public Ship(float speed, String make, String type, int numPassengers) {
         super(speed, make, type, numPassengers);
-        
+        numSails = 1;
 }
 }

@@ -8,9 +8,9 @@ package oocminihw2;
  *
  * @author user
  */
-public class Automobile extends Vehicle {
+public class Automobile extends Vehicle implements Drivable {
     public Automobile(float speed, String make, String type, int numPassengers) {
         super(speed, make, type, numPassengers);
-    
+    numWheels = 4;
 }
 }
