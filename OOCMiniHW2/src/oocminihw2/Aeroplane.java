@@ -13,4 +13,14 @@ public class Aeroplane extends Vehicle implements Flyable{
         super(speed, make, type, numPassengers);
     numWings = 2;
 }
+  private float altitude;
+  @Override
+    public void changeAltitude(float change) {
+        altitude += change;
+    }
+
+    @Override
+    public float getAltitude() {
+        return altitude;
+    }
 }

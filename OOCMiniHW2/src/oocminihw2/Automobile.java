@@ -13,4 +13,18 @@ public class Automobile extends Vehicle implements Drivable {
         super(speed, make, type, numPassengers);
     numWheels = 4;
 }
+    @Override
+    public void accelerate(float speed) {
+        setSpeed(getSpeed() + speed);
+    }
+
+    @Override
+    public void brake() {
+        setSpeed(0);
+    }
+
+    @Override
+    public void turn(float angle) {
+        setDirection(getDirection() + angle);
+    }
 }

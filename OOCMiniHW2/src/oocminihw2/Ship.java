@@ -13,4 +13,24 @@ public class Ship extends Vehicle implements Sailable {
         super(speed, make, type, numPassengers);
         numSails = 1;
 }
+      private boolean sailHoisted;
+       @Override
+    public void hoistSail() {
+        sailHoisted = true;
+    }
+
+    @Override
+    public void lowerSail() {
+        sailHoisted = false;
+    }
+
+    @Override
+    public boolean isSailHoisted() {
+        return sailHoisted;
+    }
+
+    @Override
+    public void landHo() {
+        System.out.println("Ship is on the water.");
+    }
 }
